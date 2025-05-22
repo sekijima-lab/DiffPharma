@@ -32,7 +32,7 @@ conda env create -n Int-env -f environment.yml
 
 
 ### Data download
-Download the training, validation and test datasets: [Data]()
+Download the training, validation and test datasets: [Data](https://zenodo.org/record/15428723/files/dataset.zip)
 
 ```bash
 tar xvzf DiffInt_crossdock_data.tar.gz
@@ -77,7 +77,7 @@ python -u train.py --config config/DiffPharma.yml
 ```
 
 ### Molecule generation
-Download the pretrained model:[Model]().
+Download the pretrained model:[Model](https://zenodo.org/record/15428723/files/DiffPharma_best.ckpt).
 Generation of 100 ligand molecules for 100 protein pockets.
 
 ```bash
@@ -88,7 +88,7 @@ For example
 python test_npz.py --checkpoint checkpoints/DiffPharma_best.ckpt --test_dir DiffInt_crossdock_data/ --outdir sample
 ```
 
-Generated molecules used in the paper are ```example/DiffInt_generated_molecules.tar.gz ```
+Generated molecules used in the paper: [Data](https://zenodo.org/record/15428723/files/generated_molecules.zip)
 
 
 ### Generate 10 ligand molecules for one pocket
