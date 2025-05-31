@@ -94,7 +94,7 @@ if __name__ == "__main__":
 
     logger = pl.loggers.WandbLogger(
         save_dir=args.logdir,
-        project='T4_training_hypara',
+        project='DiffPharma_training',
         group=args.dataset,
         name=args.run_name,
         id=args.run_name,

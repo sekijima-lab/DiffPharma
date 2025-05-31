@@ -1,10 +1,10 @@
-run_name: 'optuna_018'
-logdir: '/gs/fs/tga-science/sako/02.DiffInt/93.89EGNN3_hDSP_hpSSP_con_mod36_hypara/train_log/'
+run_name: 'DiffPharma_training'
+logdir: '/path/to/log_dir'
 wandb_params:
   mode: 'online'  # disabled, offline, online
-  entity: 'msako82'
+  entity: 'my_wandb_ID'
 dataset: 'full_hDSP_hpSSP'
-datadir: '/gs/fs/tga-science/sako/02.DiffInt/02.data/full_h_doubleSP+hp_singleSP/'
+datadir: '/path/to/datdir/'
 enable_progress_bar: True
 num_sanity_val_steps: 0
 
@@ -60,6 +60,6 @@ visualize_chain_epoch: 200
 eval_params:
   n_eval_samples: 100
   eval_batch_size: 100
-  smiles_file: '/gs/fs/tga-science/sako/02.DiffInt/02.data/full_h_doubleSP+hp_singleSP/train_smiles.npy'
+  smiles_file: '/path/to/datadir/train_smiles.npy'
   n_visualize_samples: 5
   keep_frames: 100
