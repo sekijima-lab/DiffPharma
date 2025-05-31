@@ -103,4 +103,3 @@ Or you can use Google Colabratory.(This notebook has been confirmed to work on M
 ├── colab
 │   └── DiffPharma_generate.ipynb
 ```
->>>>>>> first upload

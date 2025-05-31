@@ -245,7 +245,7 @@ def main():
     
     process_data(sdf_file=args.sdf, pdb_file=args.pdb)
     process_data_h(sdf_file=args.sdf, pdb_file=args.pdb) 
-    ligand_generation(outdir=args.outdir, test_file='tmp2.npz', checkpoint=args.checkpoint, save=True)
+    ligand_generation(outdir=args.outdir, test_file='tmp2.npz', checkpoint=args.checkpoint, n_samples=args.n_samples, save=True)
 
 
 if __name__ == "__main__":
