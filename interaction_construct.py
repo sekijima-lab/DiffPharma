@@ -44,7 +44,9 @@ def hbond_create(protein, ligand):
     inter_one_hot = np.identity(3)[do_ac_id]
 
     if len(int_id)==0:
-        int_id=np.array([])
+        int_id=[]
+        inter_coords = np.array([], dtype=np.float32).reshape(0, 3)
+        inter_one_hot = np.array([], dtype=np.float32).reshape(0, 3)
 
     return int_id, inter_coords, inter_one_hot
 
@@ -66,6 +68,11 @@ def hydrophobic_data(protein, ligand):
     atom_label = [x for i in range(len(atom_type)) for x in (atom_sp[i], atom_type[i])]
     atom_int = [mapping.get(x, 5) for x in atom_label]
     one_hot = np.identity(6)[atom_int]
+
+    if len(hydo[0])==0:
+        int_id=np.array([], dtype=np.float32).reshape(0, 2)
+        coords = np.array([], dtype=np.float32).reshape(0, 3)
+        one_hot = np.array([], dtype=np.float32).reshape(0, 6)
 
     return int_id, coords, one_hot
 

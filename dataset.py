@@ -40,7 +40,7 @@ class ProcessedLigandPocketDataset(Dataset):
             elif 'interhp_' in k:
                 t = 0
                 sections = []
-                if len(data['interhp_id'][0])!=0:
+                if len(data['interhp_id'])!=0:
                     if data['interhp_mask'][0]!=0:
                         for l in range(data['interhp_mask'][0]): sections.append(0)
                     for i in np.diff(data['interhp_mask']):
