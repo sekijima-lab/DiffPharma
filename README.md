@@ -1,3 +1,7 @@
+## DiffPharma
+
+This repository provides the source code and pretrained models for the [arXiv](https://chemrxiv.org/engage/chemrxiv/article-details/684c1f943ba0887c3310534d).
+
 ## Dependencies
 
 ### Cuda environment
